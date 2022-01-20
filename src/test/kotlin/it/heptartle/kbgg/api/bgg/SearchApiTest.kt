@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test
 class SearchApiTest {
 
     private val service = BggServiceFactory.getSearchService()
-
+/*
     @Test
     fun name() {
 
@@ -33,5 +33,7 @@ class SearchApiTest {
         assertEquals(null, response.items!![0].thumbnail)
         assertEquals("2016", response.items!![0].yearpublished)
     }
+
+ */
 
 }

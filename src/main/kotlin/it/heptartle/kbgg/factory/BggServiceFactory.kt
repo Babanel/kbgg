@@ -22,7 +22,7 @@ object BggServiceFactory {
     fun getThreadService(): ThreadApi =
         bggService.create(ThreadApi::class.java)
 
-    fun getCollectionService():CollectionApi =
+    fun getCollectionService(): CollectionApi =
         bggService.create(CollectionApi::class.java)
 
     private val bggService: Retrofit =

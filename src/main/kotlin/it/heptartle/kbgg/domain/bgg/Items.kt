@@ -1,6 +1,78 @@
 package it.heptartle.kbgg.domain.bgg
 
+import it.heptartle.kbgg.domain.geekdo.Item
 import org.simpleframework.xml.*
+
+@Root(name = "collection", strict = false)
+class UserCollection {
+    @field:ElementList(name="item", inline = true, required = false)
+    var collectionItems: List<CollectionItem>? = null
+
+    @field:Attribute(required = false)
+    var termsofuse: String = ""
+
+    @field:Attribute(required = false)
+    var total: Int? = null
+}
+
+@Root(name = "item", strict = false)
+class CollectionItem {
+
+    @field:Attribute
+    var objectid: Int = 0
+
+    @field:Attribute(required = false)
+    var objecttype: String? = null
+
+    @field:Attribute(required = false)
+    var subtype: String? = null
+
+    @field:Attribute(required = false)
+    var collid: Int = 0
+
+    @field:Text(required = false)
+    @field:Path("./name")
+    var name: String? = null
+
+    @field:Text(required = false)
+    @field:Path("./yearpublished")
+    var yearpublished: String? = null
+
+    @field:Text(required = false)
+    @field:Path("./image")
+    var image: String? = null
+    /*
+        @field:Text(required = false)
+        @field:Path("./thumbnail")
+        var thumbnail: String? = null
+     */
+    @field:Element(required = false)
+    var thumbnail: Thumbnail? = null
+
+    @field:Attribute(required = false)
+    var minplayers: Int = 0
+
+    @field:Attribute(required = false)
+    var maxplayers: Int = 0
+
+    @field:Attribute(required = false)
+    var minplaytime: Int = 0
+
+    @field:Attribute(required = false)
+    var maxplaytime: Int = 0
+
+    @field:Attribute(required = false)
+    var playingtime: Int = 0
+
+    @field:Text(required = false)
+    @field:Path("./numplays")
+    var numplays: Int = 0
+}
+
+
+
+
+//TODO Testing Area ^^^..............^^
 
 @Root(name = "items", strict = false)
 class Items {
@@ -13,6 +85,8 @@ class Items {
     @field:Attribute(required = false)
     var total: Int? = null
 }
+
+
 
 @Root(name = "item", strict = false)
 class Item {

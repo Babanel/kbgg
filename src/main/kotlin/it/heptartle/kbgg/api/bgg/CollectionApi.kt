@@ -1,13 +1,20 @@
 package it.heptartle.kbgg.api.bgg
 
-import it.heptartle.kbgg.domain.bgg.Items
-import it.heptartle.kbgg.domain.bgg.Type
+
+import it.heptartle.kbgg.domain.bgg.UserCollection
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface CollectionApi {
-    @GET("hot")
-    fun hot(@Query("type") type: Type? = null): Call<Items>
+    @GET("collection")
+    fun getCollection(@Query("username") username: String,
+                 @Query("version") version: Int = 0,
+                 @Query("excludesubtype") excludesubtype: String,
+                 @Query("stats") stats: Int = 0,
+                 @Query("own") own: Int
+
+    ): Call<UserCollection>
+
 }
 
