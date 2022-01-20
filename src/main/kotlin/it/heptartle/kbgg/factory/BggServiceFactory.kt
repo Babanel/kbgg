@@ -22,6 +22,9 @@ object BggServiceFactory {
     fun getThreadService(): ThreadApi =
         bggService.create(ThreadApi::class.java)
 
+    fun getCollectionService():CollectionApi =
+        bggService.create(CollectionApi::class.java)
+
     private val bggService: Retrofit =
         Retrofit.Builder()
             .baseUrl("https://www.boardgamegeek.com/xmlapi2/")
