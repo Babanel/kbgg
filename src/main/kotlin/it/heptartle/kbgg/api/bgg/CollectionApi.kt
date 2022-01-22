@@ -16,7 +16,7 @@ interface CollectionApi {
                  @Query("stats") stats: Int = 0,
                  @Query("own") own: Int
 
-    ): Observable<UserCollection>
+    ): Call<UserCollection>
 
 }
 
