@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Added API for User Collections">
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="BugFixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionApi.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +95,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RxJava3_Testing" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -252,10 +256,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainKt" />
+        <item itemvalue="JUnit.RecommendationsApiTest.retrieveRecommendations" />
         <item itemvalue="Gradle.kbgg [uploadArchives]" />
         <item itemvalue="Gradle.kbgg [publish]" />
         <item itemvalue="Gradle.kbgg [install]" />
-        <item itemvalue="JUnit.RecommendationsApiTest.retrieveRecommendations" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +463,28 @@
       <option name="project" value="LOCAL" />
       <updated>1642706671361</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added rxJava3">
+      <created>1642777396867</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1642777396868</updated>
+    </task>
+    <task id="LOCAL-00024" summary="BugFixes">
+      <created>1642810520721</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1642810520721</updated>
+    </task>
+    <task id="LOCAL-00025" summary="BugFixes">
+      <created>1642811240265</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1642811240265</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +501,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Collection_add" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -510,7 +535,9 @@
     <MESSAGE value="removed field" />
     <MESSAGE value="Added CollectionService" />
     <MESSAGE value="Added API for User Collections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added API for User Collections" />
+    <MESSAGE value="Added rxJava3" />
+    <MESSAGE value="BugFixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="BugFixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
