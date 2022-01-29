@@ -5,6 +5,8 @@ import it.heptartle.kbgg.domain.bgg.UserCollection
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
+import io.reactivex.rxjava3.core.Observable
+
 
 
 interface CollectionApi {
@@ -15,7 +17,7 @@ interface CollectionApi {
                  @Query("stats") stats: Int = 0,
                  @Query("own") own: Int
 
-    ): Call<UserCollection>
+    ): Observable<Call<UserCollection>>
 
 }
 
