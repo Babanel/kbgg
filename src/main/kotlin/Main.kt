@@ -18,7 +18,7 @@ fun main() {
     val images = geekdoService.getImages(291457).execute().body()
     println(images)
 
- */
+
     var collection = mutableListOf<String?>()
 
     val service = BggServiceFactory.getCollectionService()
@@ -43,7 +43,7 @@ fun main() {
 
         })
 
-
+ */
 
 
 
