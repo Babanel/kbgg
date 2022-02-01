@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="BugFixes">
-      <change beforePath="$PROJECT_DIR$/.idea/kbgg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kbgg.iml" afterDir="false" />
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Observable Implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionApi.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -493,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642844180332</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Observable Implementation">
+      <created>1643452843905</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1643452843905</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +550,8 @@
     <MESSAGE value="Added API for User Collections" />
     <MESSAGE value="Added rxJava3" />
     <MESSAGE value="BugFixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="BugFixes" />
+    <MESSAGE value="Observable Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Observable Implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
