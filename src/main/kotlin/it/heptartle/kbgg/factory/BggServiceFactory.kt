@@ -25,6 +25,9 @@ object BggServiceFactory {
     fun getCollectionService(): CollectionApi =
         bggService.create(CollectionApi::class.java)
 
+    fun getCollectionObservableService(): CollectionObservableApi =
+        bggService.create(CollectionObservableApi::class.java)
+
     private val bggService: Retrofit =
         Retrofit.Builder()
             .baseUrl("https://www.boardgamegeek.com/xmlapi2/")

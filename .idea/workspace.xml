@@ -9,8 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Observable Implementation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Observable Implementation Testing">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -518,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643798963082</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Observable Implementation Testing">
+      <created>1643799924346</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1643799924346</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +579,8 @@
     <MESSAGE value="Added rxJava3" />
     <MESSAGE value="BugFixes" />
     <MESSAGE value="Observable Implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Observable Implementation" />
+    <MESSAGE value="Observable Implementation Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Observable Implementation Testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
