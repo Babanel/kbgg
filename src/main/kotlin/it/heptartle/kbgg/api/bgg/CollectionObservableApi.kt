@@ -9,7 +9,7 @@ import io.reactivex.rxjava3.core.Observable
 
 
 
-interface CollectionApi {
+interface CollectionObservableApi {
     @GET("collection")
     fun getCollection(@Query("username") username: String,
                  @Query("version") version: Int = 0,
@@ -17,7 +17,8 @@ interface CollectionApi {
                  @Query("stats") stats: Int = 0,
                  @Query("own") own: Int
 
-    ): Call<UserCollection>
+    ): Observable<UserCollection>
+            //Observable<Call<UserCollection>>
 
 }
 
