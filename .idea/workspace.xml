@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Observable Implementation Testing">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/Items.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/Items.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -525,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643799924346</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Observable Implementation Testing">
+      <created>1643800144567</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1643800144567</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

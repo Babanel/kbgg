@@ -1,11 +1,11 @@
 package it.heptartle.kbgg.domain.bgg
 
-import it.heptartle.kbgg.domain.geekdo.Item
+
 import org.simpleframework.xml.*
 
 @Root(name = "collection", strict = false)
 class UserCollection {
-    @field:ElementList(name="item", inline = true, required = false)
+    @field:ElementList(name = "item", inline = true, required = false)
     var collectionItems: List<CollectionItem>? = null
 
     @field:Attribute(required = false)
@@ -41,6 +41,7 @@ class CollectionItem {
     @field:Text(required = false)
     @field:Path("./image")
     var image: String? = null
+
     /*
         @field:Text(required = false)
         @field:Path("./thumbnail")
@@ -70,13 +71,11 @@ class CollectionItem {
 }
 
 
-
-
 //TODO Testing Area ^^^..............^^
 
 @Root(name = "items", strict = false)
 class Items {
-    @field:ElementList(name="item", inline = true, required = false)
+    @field:ElementList(name = "item", inline = true, required = false)
     var items: List<Item>? = null
 
     @field:Attribute
@@ -87,11 +86,10 @@ class Items {
 }
 
 
-
 @Root(name = "item", strict = false)
 class Item {
 
-    @field:Attribute
+    @field:Attribute(required = false)
     var id: Int = 0
 
     @field:Attribute(required = false)
@@ -106,11 +104,11 @@ class Item {
     @field:ElementList(name = "name", inline = true, required = false)
     var names: List<Name>? = null
 
-    @field:Attribute(name="value", required = false)
+    @field:Attribute(name = "value", required = false)
     @field:Path("./yearpublished")
     var yearpublished: String? = null
 
-    @field:Attribute(name="value", required = false)
+    @field:Attribute(name = "value", required = false)
     @field:Path("./seriescode")
     var seriescode: String? = null
 
@@ -125,23 +123,23 @@ class Item {
     @field:Path("./minplayers")
     var minplayers: Int? = null
 
-    @field:Attribute(name="value", required = false)
+    @field:Attribute(name = "value", required = false)
     @field:Path("./maxplayers")
     var maxplayers: Int? = null
 
-    @field:Attribute(name="value", required = false)
+    @field:Attribute(name = "value", required = false)
     @field:Path("./playingtime")
     var playingtime: Int? = null
 
-    @field:Attribute(name="value", required = false)
+    @field:Attribute(name = "value", required = false)
     @field:Path("./minplaytime")
     var minplaytime: Int? = null
 
-    @field:Attribute(name="value", required = false)
+    @field:Attribute(name = "value", required = false)
     @field:Path("./maxplaytime")
     var maxplaytime: Int? = null
 
-    @field:Attribute(name="value", required = false)
+    @field:Attribute(name = "value", required = false)
     @field:Path("./minage")
     var minage: Int? = null
 
@@ -252,7 +250,7 @@ class Video {
 class Statistics {
 
     @field:Attribute
-    var page: Int  = 0
+    var page: Int = 0
 
     @field:Element
     var ratings: Ratings =
@@ -358,7 +356,7 @@ class Link {
     var value: String = ""
 
     @field:Attribute(required = false)
-    var inbound: String?  = null
+    var inbound: String? = null
 }
 
 
@@ -437,7 +435,7 @@ enum class Type(val value: String) {
     RPGCOMPANY("rpgcompany"),
     VIDEOGAMECOMPANY("videogamecompany");
 
-    override fun toString(): String{
+    override fun toString(): String {
         return value
     }
 }
@@ -449,7 +447,7 @@ enum class SearchType(val value: String) {
     BOARDGAMEACCESSORY("boardgameaccessory"),
     BOARDGAMEEXPANSION("boardgameexpansion");
 
-    override fun toString(): String{
+    override fun toString(): String {
         return value
     }
 }
@@ -459,7 +457,7 @@ class SearchTypes(private val types: List<SearchType>) {
 }
 
 
-enum class ExactResult(val value:Int?) {
+enum class ExactResult(val value: Int?) {
     TRUE(1),
     FALSE(null)
 }
