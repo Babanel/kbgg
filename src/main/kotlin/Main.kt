@@ -48,7 +48,7 @@ fun main() {
 
         })
 
-
+*/
 
     var collection = mutableListOf<Item?>()
     val items = mutableListOf( "173346", "526", "8790")
@@ -60,7 +60,14 @@ fun main() {
                 val body = response.body()
 
                 collection.addAll(body!!.items as Collection<Item>)
-              collection.forEach { println(it?.names?.get(0).toString()) }
+              collection.forEach {
+                  println(it?.names?.get(0)?.value.toString())
+                  println(it?.description)
+
+
+
+
+              }
 
             }
 
@@ -73,7 +80,6 @@ println(t)
 
 
 
- */
 
 
 }

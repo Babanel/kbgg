@@ -116,7 +116,7 @@ class Item {
     @field:Path("./image")
     var image: String? = null
 
-    @field:Element(required = false)
+    @field:Element(name = "description", required = false)
     var description: String? = null
 
     @field:Attribute(name = "value", required = false)
@@ -413,6 +413,7 @@ class Name {
     var sortindex: String? = null
 
 }
+
 
 
 @Root(name = "thumbnail", strict = false)
