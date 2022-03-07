@@ -9,15 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Increased the timeout for the OkHttpClient">
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kbgg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kbgg.iml" afterDir="false" />
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Added error handling for user collections (ex.: Invalid username)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_release.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build_release.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/Items.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/Items.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -554,7 +548,28 @@
       <option name="project" value="LOCAL" />
       <updated>1645709415042</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Testing code">
+      <created>1646654703104</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1646654703104</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Bug Fixes">
+      <created>1646654728605</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1646654728605</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added error handling for user collections (ex.: Invalid username)">
+      <created>1646654833356</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1646654833356</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,8 +602,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="changed settings" />
-    <MESSAGE value="changed version" />
     <MESSAGE value="Changed the single element value representation and added new Statistics element in the Items element" />
     <MESSAGE value="Added new Videos element in the Items element" />
     <MESSAGE value="Changed version" />
@@ -611,7 +624,10 @@
     <MESSAGE value="Observable Implementation Testing" />
     <MESSAGE value="bug fixes" />
     <MESSAGE value="Increased the timeout for the OkHttpClient" />
-    <option name="LAST_COMMIT_MESSAGE" value="Increased the timeout for the OkHttpClient" />
+    <MESSAGE value="Testing code" />
+    <MESSAGE value="Bug Fixes" />
+    <MESSAGE value="Added error handling for user collections (ex.: Invalid username)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added error handling for user collections (ex.: Invalid username)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
