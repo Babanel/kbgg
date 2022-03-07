@@ -1,9 +1,6 @@
 
-import it.heptartle.kbgg.domain.bgg.Item
-import it.heptartle.kbgg.domain.bgg.Items
 import it.heptartle.kbgg.domain.bgg.UserCollection
 import it.heptartle.kbgg.factory.BggServiceFactory
-import it.heptartle.kbgg.factory.GeekdoServiceFactory
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -49,7 +46,10 @@ fun main() {
         })
 
 */
-
+    /**
+     * Testing for Thing Service
+     */
+    /*
     var collection = mutableListOf<Item?>()
     val items = mutableListOf( "173346", "526", "8790")
     val service = BggServiceFactory.getThingService()
@@ -63,10 +63,6 @@ fun main() {
               collection.forEach {
                   println(it?.names?.get(0)?.value.toString())
                   println(it?.description)
-
-
-
-
               }
 
             }
@@ -77,10 +73,47 @@ println(t)
 
         })
 
+     */
 
+val user = "657uytut"
+    val service = BggServiceFactory.getCollectionService()
+    val items: MutableList<String> = mutableListOf()
+    println ("getUserCollection - user: $user")
+    service.getCollection(user, 0, "boardgameexpansion", 0, 1)
+        .enqueue(object : Callback<UserCollection> {
 
+            override fun onResponse(
+                call: Call<UserCollection?>,
+                response: Response<UserCollection?>
+            ) {
+                //Log.d("bggTesting", "getUserCollection - Response code - ${response.code()}")
 
+                val body = response.body()
+                if (body != null) {
+                    println(body.error.toString())
+                    if (body.error == null){
+                    items.addAll(
+                        body.collectionItems?.map {
+                            it.objectid.toString()
+                        }!!
+                    )
+                    //gameIdList.addAll(items)
+                    //getGamesFromService(items)
+println("Items = $items")}else {
+                        println("Error = ${body.error!!.map { it.message }}")
+                    }
+                } else {
+                    //Log.d("bggTesting", "getUserCollection - Body Null")
 
+                }
+            }
+
+            override fun onFailure(call: Call<UserCollection?>, t: Throwable) {
+                //super.onFailure(call, t)
+                //Log.d("bggTesting", "getUserCollection - ERROR: $t")
+            }
+
+            })
 
 }
 
