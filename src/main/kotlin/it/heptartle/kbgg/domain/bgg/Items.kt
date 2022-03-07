@@ -13,6 +13,17 @@ class UserCollection {
 
     @field:Attribute(required = false)
     var total: Int? = null
+
+    @field:ElementList(name = "error", inline = true, required = false)
+    var error: List<Error>? = null
+}
+
+@Root(name = "error", strict = false)
+class Error {
+
+    @field:Text(required = false)
+    @field:Path("./message")
+    var message: String? = null
 }
 
 @Root(name = "item", strict = false)

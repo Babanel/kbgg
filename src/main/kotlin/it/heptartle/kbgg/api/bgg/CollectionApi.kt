@@ -11,11 +11,12 @@ import io.reactivex.rxjava3.core.Observable
 
 interface CollectionApi {
     @GET("collection")
-    fun getCollection(@Query("username") username: String,
-                 @Query("version") version: Int = 0,
-                 @Query("excludesubtype") excludesubtype: String,
-                 @Query("stats") stats: Int = 0,
-                 @Query("own") own: Int
+    fun getCollection(
+        @Query("username") username: String,
+        @Query("version") version: Int = 0,
+        @Query("excludesubtype") excludesubtype: String,
+        @Query("stats") stats: Int = 0,
+        @Query("own") own: Int
 
     ): Call<UserCollection>
 
