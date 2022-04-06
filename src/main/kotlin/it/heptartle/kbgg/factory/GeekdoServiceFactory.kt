@@ -26,6 +26,10 @@ object GeekdoServiceFactory {
     fun getGeekItemsApi(): GeekItemsApi =
         geekdoService.create(GeekItemsApi::class.java)
 
+    fun getVideosService(): VideosApi =
+        geekdoService.create(VideosApi::class.java)
+
+
     private val geekdoService: Retrofit =
          Retrofit.Builder()
              .baseUrl("https://api.geekdo.com/api/")
