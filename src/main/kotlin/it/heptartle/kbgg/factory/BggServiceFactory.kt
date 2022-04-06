@@ -3,7 +3,9 @@ package it.heptartle.kbgg.factory
 import it.heptartle.kbgg.api.bgg.*
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory
+
 
 object BggServiceFactory {
 
@@ -32,6 +34,7 @@ object BggServiceFactory {
         Retrofit.Builder()
             .baseUrl("https://www.boardgamegeek.com/xmlapi2/")
             .client(OkHttpClient())
+            .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .addConverterFactory(SimpleXmlConverterFactory.create())
             .build()
 
