@@ -9,9 +9,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Added error handling for user collections (ex.: Invalid username)">
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Commented out main code">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/Utils/Languages.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/VideosApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Videos.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kbgg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kbgg.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionObservableApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionObservableApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/ImagesApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/ImagesApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Files.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Files.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/GeekdoServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/GeekdoServiceFactory.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,17 +129,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558383556434" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vlad\AndroidStudioProjects\Learning\kbgg\src\main\kotlin\it\heptartle\kbgg\domain\geekdo" />
       <recent name="C:\Users\Vlad\AndroidStudioProjects\Learning\kbgg\src\main\kotlin\it\heptartle\kbgg\factory" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -144,9 +156,9 @@
       <recent name="api" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="it.heptartle.kbgg.api.geekdo" />
       <recent name="it.heptartle.kbgg.api.bgg" />
       <recent name="it.heptartle.kbgg.factory" />
-      <recent name="it.heptartle.kbgg.api.geekdo" />
       <recent name="it.heptartle.kbgg.api" />
     </key>
   </component>
@@ -569,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646654833356</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Commented out main code">
+      <created>1646655702037</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1646655702037</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +621,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Changed the single element value representation and added new Statistics element in the Items element" />
     <MESSAGE value="Added new Videos element in the Items element" />
     <MESSAGE value="Changed version" />
     <MESSAGE value="Added new field into Link object" />
@@ -627,7 +645,8 @@
     <MESSAGE value="Testing code" />
     <MESSAGE value="Bug Fixes" />
     <MESSAGE value="Added error handling for user collections (ex.: Invalid username)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added error handling for user collections (ex.: Invalid username)" />
+    <MESSAGE value="Commented out main code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commented out main code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
