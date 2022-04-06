@@ -16,7 +16,25 @@ interface ImagesApi {
                   @Query("pageid") pageid:Int = 1,
                   @Query("showcount") showcount:Int = 50,
                   @Query("size") size:String = "thumb",
-                  @Query("sort") sort:String = "recent"
+                  @Query("sort") sort:String = "recent",
+                  @Query("interval") interval:String = "alltime",
+                  @Query("tag") tag:String = "",
+                  @Query("licensefilter") licensefilter:String = ""
                   ): Call<Images>
+
+    /**
+    objectid: the ID of the thing you want to get images of
+    ajax: "1"
+    gallery: "all", "game", "people", "creative"
+    nosession: "1"
+    objecttype: "thing", "person"
+    pageid: "1"
+    showcount: "50"
+    size: "thumb", "micro", "square", "squarefit", "tallthumb", "previewthumb", "square200"
+    sort: "hot", "recent"
+    interval: "alltime", "today", "twodays", "last7", "last30", "year"
+    tag: "", "BoxFront", "BoxBack", "Components", "Customized", "Play", "Miscellaneous", "uncat"
+    licensefilter: "", "reuse", "commercial", "modify"
+     */
 
 }
