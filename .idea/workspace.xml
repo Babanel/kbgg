@@ -9,19 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Commented out main code">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/Utils/Languages.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/VideosApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Videos.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kbgg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kbgg.iml" afterDir="false" />
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="06.04.2022 updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionObservableApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/CollectionObservableApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/ImagesApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/ImagesApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Files.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Files.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/GeekdoServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/GeekdoServiceFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/VideosApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/VideosApi.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -588,7 +578,63 @@
       <option name="project" value="LOCAL" />
       <updated>1646655702037</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Added addCallAdapterFactory">
+      <created>1649257067310</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257067310</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Added addCallAdapterFactory">
+      <created>1649257098857</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257098857</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Testing stuff">
+      <created>1649257130194</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257130194</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Moved Languages to Utils Language class">
+      <created>1649257213492</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257213492</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Added get video service">
+      <created>1649257257657</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257257657</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Improved documentation and added parameters">
+      <created>1649257293339</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257293339</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Testing stuff">
+      <created>1649257314753</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257314753</updated>
+    </task>
+    <task id="LOCAL-00046" summary="06.04.2022 updates">
+      <created>1649257332617</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1649257332617</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,12 +667,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added new Videos element in the Items element" />
-    <MESSAGE value="Changed version" />
-    <MESSAGE value="Added new field into Link object" />
-    <MESSAGE value="bugfix" />
-    <MESSAGE value="add seriescode in Item object" />
-    <MESSAGE value="not unknown field will be skipped" />
     <MESSAGE value="fix" />
     <MESSAGE value="added marketplace thing" />
     <MESSAGE value="Repackaged api and added new ones for geekdo" />
@@ -646,7 +686,13 @@
     <MESSAGE value="Bug Fixes" />
     <MESSAGE value="Added error handling for user collections (ex.: Invalid username)" />
     <MESSAGE value="Commented out main code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commented out main code" />
+    <MESSAGE value="Added addCallAdapterFactory" />
+    <MESSAGE value="Moved Languages to Utils Language class" />
+    <MESSAGE value="Added get video service" />
+    <MESSAGE value="Improved documentation and added parameters" />
+    <MESSAGE value="Testing stuff" />
+    <MESSAGE value="06.04.2022 updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="06.04.2022 updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
