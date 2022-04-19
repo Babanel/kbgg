@@ -7,6 +7,12 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 import io.reactivex.rxjava3.core.Observable
 import it.heptartle.kbgg.domain.geekdo.User
+import io.reactivex.rxjava3.schedulers.Schedulers
+
+import com.google.gson.JsonObject
+
+
+
 
 
 

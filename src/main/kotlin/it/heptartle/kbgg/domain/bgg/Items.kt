@@ -53,34 +53,36 @@ class CollectionItem {
     @field:Path("./image")
     var image: String? = null
 
-    /*
-        @field:Text(required = false)
-        @field:Path("./thumbnail")
-        var thumbnail: String? = null
-     */
     @field:Element(required = false)
     var thumbnail: Thumbnail? = null
 
-    @field:Attribute(required = false)
-    var minplayers: Int = 0
+    @field:Element(name = "stats", required = false)
+    var stats: Stats? = null
 
-    @field:Attribute(required = false)
-    var maxplayers: Int = 0
-
-    @field:Attribute(required = false)
-    var minplaytime: Int = 0
-
-    @field:Attribute(required = false)
-    var maxplaytime: Int = 0
-
-    @field:Attribute(required = false)
-    var playingtime: Int = 0
-
-    @field:Text(required = false)
-    @field:Path("./numplays")
-    var numplays: Int = 0
 }
 
+     @Root(name = "stats", strict = false)
+     class Stats {
+         @field:Attribute(required = false)
+         var minplayers: Int = 0
+
+         @field:Attribute(required = false)
+         var maxplayers: Int = 0
+
+         @field:Attribute(required = false)
+         var minplaytime: Int = 0
+
+         @field:Attribute(required = false)
+         var maxplaytime: Int = 0
+
+         @field:Attribute(required = false)
+         var playingtime: Int = 0
+
+         @field:Text(required = false)
+         @field:Path("./numplays")
+         var numplays: Int = 0
+
+ }
 
 //TODO Testing Area ^^^..............^^
 
