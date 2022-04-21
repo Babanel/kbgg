@@ -59,6 +59,8 @@ class CollectionItem {
     @field:Element(name = "stats", required = false)
     var stats: Stats? = null
 
+    var owner:MutableList<String>? = mutableListOf()
+
 }
 
      @Root(name = "stats", strict = false)
